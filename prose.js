@@ -1,0 +1,1 @@
+Proses = new Meteor.Collection("proses");
