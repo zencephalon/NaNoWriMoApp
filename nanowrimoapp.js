@@ -25,6 +25,11 @@ if (Meteor.isClient) {
       }, 700);
     }
   });
+
+  Template.writing_area.rendered = function() {
+    console.log("Hello");
+    $('textarea').autosize();
+  }
 }
 
 if (Meteor.isServer) {
