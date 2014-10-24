@@ -15,9 +15,16 @@ if (Meteor.isClient) {
 
   Template.writing_area.events({
     'keypress textarea': function(event) {
-      Proses.update($(event.target).data('id'), {"$set": {text: $(event.target).val()}})
+      $(event.target).addClass('unsaved');
+      if (autosaveTimeout) {
+        clearTimeout(autosaveTimeout);
+      }
+      autosaveTimeout = setTimeout(function() {
+        Proses.update($(event.target).data('id'), {"$set": {text: $(event.target).val()}});
+        $(event.target).removeClass('unsaved');
+      }, 700);
     }
-  })
+  });
 }
 
 if (Meteor.isServer) {

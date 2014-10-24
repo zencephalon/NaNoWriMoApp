@@ -1,1 +1,4 @@
 /* CSS declarations go here */
+.unsaved {
+  background-color: #f00;
+}
