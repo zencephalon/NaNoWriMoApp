@@ -26,8 +26,7 @@ Template.prose_subedit.events({
 Template.prose_subedit.helpers({
   wordcount: function(branch) {
     if (branch) {
-      var regex = /\s+/gi;
-      return branch.text.trim().replace(regex, ' ').split(' ').length;
+      return Counts.getCount(branch.text);
     }
   }
 });

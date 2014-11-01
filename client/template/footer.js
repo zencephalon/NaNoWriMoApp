@@ -1,11 +1,11 @@
 Template.footer.word_count = function() {
-  if (count = Counts.get()) {
-    return count.word_count;
+  if (count = Counts.doCount()) {
+    return "Words to go<br>total: " + count.words_left + "<br>today: " + count.words_needed;
   }
 }
 
 Template.footer.prose_count = function() {
-  if (count = Counts.get()) {
+  if (count = Counts.doCount()) {
     return count.prose_count;
   }
 }
