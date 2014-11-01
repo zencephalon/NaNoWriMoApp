@@ -1,0 +1,7 @@
+<template name="footer">
+  <footer>
+    <hr>
+    {{#markdown}}{{content}}{{/markdown}}
+    <a href="{{pathFor 'prose_list'}}">{{word_count}} words in {{prose_count}} proses</a>.
+  </footer>
+</template>

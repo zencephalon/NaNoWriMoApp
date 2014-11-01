@@ -1,0 +1,23 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href='//fonts.googleapis.com/css?family=Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
+  <link rel="icon" sizes="16x16 32x32" href="/favicon.ico">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/styles/atelier-lakeside.light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+</head>
+
+<template name="layout">
+  <div id="content">
+    <header>
+      <a href="/index"><img src="/zenchinese.png" class="logo"/></a>
+      {{> loginButtons}}
+      {{> quickswitcher}}
+    </header>
+    {{> yield}}
+    {{> footer}}
+  </div>
+</template>
+
+<template name="prose_url_title">
+{{url}} - {{title}}
+</template>
