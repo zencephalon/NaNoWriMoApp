@@ -10,3 +10,6 @@ accounts-facebook
 iron:router
 zencephalon:autocomplete
 markdown
+jparker:crypto-sha1
+http
+
