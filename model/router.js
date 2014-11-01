@@ -27,13 +27,14 @@ Router.onBeforeAction(function() {
   } else {
     Meteor.subscribe("proses_public");
   }
+  this.next();
 });
 
 Router.map(function() {
   this.route('home', {
     path: '/',
     action: function() {
-      Router.go('prose', {url: 'index'});
+      Journal.keyBindFunc(Journal.today());
     }
   });
 
