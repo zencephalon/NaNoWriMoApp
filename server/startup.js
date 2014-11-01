@@ -20,3 +20,10 @@ if (Meteor.isServer) {
     })
   });
 }
+
+Meteor.methods({updateWordCount: function () {
+   this.unblock();
+   var result = Meteor.http.call('PUT', 'http://nanowrimo.org/api/wordcount', {params: {hash: "43c0fcaa26b2a3820d99f292c3a001676a096775", name: 'Zencephalon', wordcount: 46}});
+   if (result.statusCode === 200) return true
+   return false;
+}}); 
