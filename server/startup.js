@@ -1,8 +1,6 @@
 if (Meteor.isServer) {
   Meteor.startup(function () {
     if (Proses.find().count() === 0) {
-      Prose.create("My Brain on Zen", "index", "I'm Matthew Bunday and I love you.", false);
-      Prose.create("I love Daria!", "i_love_daria", "Daria is seriously the best.", false);
       Proses._ensureIndex({url: 1}, {unique: true});
     }
 
