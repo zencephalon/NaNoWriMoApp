@@ -5,7 +5,6 @@ accounts-password@1.0.4
 accounts-ui-unstyled@1.1.4
 accounts-ui@1.1.3
 application-configuration@1.0.3
-autopublish@1.0.1
 autoupdate@1.1.3
 base64@1.0.1
 binary-heap@1.0.1
@@ -14,8 +13,10 @@ blaze@2.0.3
 boilerplate-generator@1.0.1
 callback-hook@1.0.1
 check@1.0.2
+coffeescript@1.0.4
 ctl-helper@1.0.4
 ctl@1.0.2
+dandv:caret-position@2.1.0-3
 ddp@1.0.11
 deps@1.0.5
 ejson@1.0.4
@@ -44,6 +45,7 @@ less@1.0.11
 livedata@1.0.11
 localstorage@1.0.1
 logging@1.0.5
+markdown@1.0.2
 meteor-platform@1.2.0
 meteor@1.1.3
 minifiers@1.1.2
@@ -74,3 +76,4 @@ underscore@1.0.1
 url@1.0.2
 webapp-hashing@1.0.1
 webapp@1.1.4
+zencephalon:autocomplete@0.4.9
