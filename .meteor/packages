@@ -4,11 +4,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 accounts-ui
 accounts-password
 accounts-facebook
 iron:router
 zencephalon:autocomplete
 markdown
-
