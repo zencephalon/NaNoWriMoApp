@@ -25,8 +25,10 @@ Template.prose_subedit.events({
 
 Template.prose_subedit.helpers({
   wordcount: function(branch) {
+    today_count = Counts.getCount(branch.text);
+    count = Counts.doCount();
     if (branch) {
-      return Counts.getCount(branch.text);
+      return "<hr><footer>today: <span class='standout'>" + today_count + "</span>, today left: <span class='standout'>" + (count.words_needed - today_count) + "</span>, total left: <span class='standout'>" + count.words_left + "</span></footer>";
     }
   }
 });
