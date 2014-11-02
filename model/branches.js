@@ -14,6 +14,7 @@ _Branches.allow({
 
 Branches = {
   subscriptions : function() {
+    Meteor.publish("branches", function() {return _Branches.find({})});
     Meteor.publish("branch_by_url", function(url) {return _Branches.find({url: url, active: true})});
     Meteor.publish("branches_by_url", function(url) {return _Branches.find({url: url})});
   },
