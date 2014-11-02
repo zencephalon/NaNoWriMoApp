@@ -13,7 +13,7 @@ getRouteData = function(url, branch_name) {
 }
 
 waitOnFunction = function() {
-  return [Meteor.subscribe("prose_by_url", this.params.url), Meteor.subscribe("branch_by_url", this.params.url), Meteor.subscribe('branches_by_url', this.params.url)];
+  return [Meteor.subscribe("proses"), Meteor.subscribe("prose_by_url", this.params.url), Meteor.subscribe("branch_by_url", this.params.url), Meteor.subscribe('branches_by_url', this.params.url)];
 }
 
 Router.onBeforeAction(function() {
